@@ -1,3 +1,3 @@
 # mypro01
 mypro01
-just a test.
+is just a test.
