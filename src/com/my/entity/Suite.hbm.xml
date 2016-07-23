@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.my.entity">
+    <class name="Suite" table="t_suite">
+        <id name="id" column="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="name"></property>
+        <property name="description"></property>
+        <property name="testCount" column="test_count"></property>
+        <property name="imgUrl" column="img_url"></property>
+        <property name="createTime" column="create_time"></property>
+
+        <many-to-one name="module" class="Module" column="module_id" lazy="false"></many-to-one>
+    </class>
+</hibernate-mapping>

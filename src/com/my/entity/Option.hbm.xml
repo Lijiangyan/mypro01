@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.my.entity">
+    <class name="Option" table="t_option">
+        <id name="id" column="id">
+            <generator class="native"></generator>
+        </id>
+        <property name="title"></property>
+        <property name="score"></property>
+        <property name="seq"></property>
+
+        <many-to-one name="question" class="Question" column="question_id" lazy="false"></many-to-one>
+    </class>
+</hibernate-mapping>

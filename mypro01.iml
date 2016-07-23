@@ -10,6 +10,20 @@
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
       </configuration>
+      <facet type="Struts2" name="Struts 2">
+        <configuration>
+          <propertiesKeys disabled="false" />
+        </configuration>
+      </facet>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/applicationContext-base.xml</file>
+          <file>file://$MODULE_DIR$/src/applicationContext-dao.xml</file>
+          <file>file://$MODULE_DIR$/src/applicationContext-service.xml</file>
+        </fileset>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -20,5 +34,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.33" level="application_server_libraries" />
+    <orderEntry type="library" name="antlr-2.7.7" level="project" />
   </component>
 </module>

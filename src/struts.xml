@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+    <!--<constant name="struts.i18n.encoding" value="UTF-8"/>-->
+    <package name="default" extends="struts-default" namespace="/">
+        <default-action-ref name="all"></default-action-ref>
+        <default-class-ref class="com.opensymphony.xwork2.ActionSupport"></default-class-ref>
+        <global-results>
+            <result name="error">/error.jsp</result>
+        </global-results>
+        <action name="all">
+            <result>/error.jsp</result>
+        </action>
+    </package>
+
+    <package name="service" extends="default" namespace="/">
+
+        <action name="user_*" class="com.my.action.UserAction" method="{1}">
+            <result name="success" type="chain">test_updateAll</result>
+            <result name="fail" type="redirect">${url}</result>
+        </action>
+
+        <action name="test_*" class="com.my.action.TestAction" method="{1}">
+            <result name="update">/test.jsp</result>
+            <result name="question">/question.jsp</result>
+            <result name="answer">/answer.jsp</result>
+        </action>
+
+    </package>
+</struts>

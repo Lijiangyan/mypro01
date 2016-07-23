@@ -1,0 +1,43 @@
+package com.my.entity;
+
+/**
+ * Created by LJ on 16/7/20.
+ */
+public class Module {
+    private int id;
+    private String name;
+    private String description;
+
+    @Override
+    public String toString() {
+        return "Module{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+}
