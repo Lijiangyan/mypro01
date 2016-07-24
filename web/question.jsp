@@ -10,6 +10,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/green.css">
     <script src="js/jquery.js"></script>
     <title>心理测试</title>
     <style type="text/css">
@@ -20,9 +21,13 @@
             width: 200px;
             height: 130px;
         }
+        nav {
+            margin-bottom: 30px;
+        }
         .main-left {
             width: 100%;
             float: left;
+            margin-left: 20px;
         }
         .category {
             margin-bottom: 20px;
@@ -45,6 +50,11 @@
             margin-bottom: 10px;
             font-size: 16px;
             float : left;
+        }
+        .ans_submit {
+            width: 60%;
+            height: 50px;
+            background-color: #00B16A;
         }
     </style>
 
@@ -71,7 +81,7 @@
 </head>
 <body>
     <nav class="navbar navbar-dark navbar-full">
-        <div class="container">
+        <div>
             <div>
                 <%--<a class="navbar-brand" href="">心理测试</a>--%>
                 <ul class="nav navbar-nav">
@@ -89,8 +99,6 @@
         </div>
     </nav>
 
-    <hr />
-
     <div>
         <%--左边--%>
         <div class="main-left">
@@ -107,7 +115,7 @@
                     </s:iterator>
                     <hr />
                 </s:iterator>
-                <input type="submit" value="提交" />
+                <input class="ans_submit btn btn-danger" type="submit" value="提交" />
             </form>
 
         </div>

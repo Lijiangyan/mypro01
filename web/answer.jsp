@@ -19,7 +19,7 @@
 </head>
 <body>
     <nav id="header" class="navbar navbar-dark navbar-full">
-        <div class="container">
+        <div>
             <a class="navbar-brand" href="https://laverna.cc">
                 <img src="images/logo.svg" class="navbar--logo">
             </a>

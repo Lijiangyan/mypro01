@@ -51,10 +51,10 @@
 </head>
 <body>
     <nav class="navbar navbar-dark navbar-full">
-        <div class="container">
+        <div>
             <div>
                 <%--<a class="navbar-brand" href="">心理测试</a>--%>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-full">
                     <%--<li class="nav-item"><a href="">爱情测试</a></li>--%>
                     <%--<li class="nav-item"><a href="">性格测试</a></li>--%>
                     <%--<li class="nav-item"><a href="">能力测试</a></li>--%>
@@ -69,7 +69,7 @@
         </div>
     </nav>
 
-    <hr />
+
 
     <div>
         <%--左边--%>
